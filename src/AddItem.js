@@ -1,10 +1,11 @@
 import React from 'react'
 import { FaPlus } from 'react-icons/fa'
 import { useRef } from 'react'
+import { useState } from 'react'
 
 const AddItem = ({newItem, setNewItem, handleSubmit}) => {
 
-  const inputRef = useRef()
+  const inputRef = useRef() // useref mostly used for once the button action done the focus should be in form
 
   return (
     <form className='addForm' onSubmit={handleSubmit}>
@@ -23,7 +24,7 @@ const AddItem = ({newItem, setNewItem, handleSubmit}) => {
         <button
             type = 'submit'
             aria-label='Add Item'
-            onClick = {() => inputRef.current.focus()}
+            onClick = {() => inputRef.current.focus()} // by using this we can achieve it
         >
             <FaPlus />
         </button>
