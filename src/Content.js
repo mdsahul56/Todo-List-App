@@ -50,14 +50,15 @@ const Content = ({items, setItems, handleCheck, clickDelete}) => {
   )
 }
 
-{/*Concept 1*/}
-        {/*<p>Let's <b>{name}</b> Money</p>
+/*Concept 1*/
+        /*<p>Let's <b>{name}</b> Money</p>
         <button onClick={handleNameChange}>Subscribe</button>
         <button onClick={() => handleClick("Sahul")}>Submit</button> //We could not call the function xxx() like this. Because the the function executed itself before click the button
         <button onDoubleClick={() => handleClick("Sahul")}>Double Click</button>
 
         <button onClick={decrementNum}>-</button>
         <span>{count}</span>
-        <button onClick={incrementNum}>+</button> */}
+        <button onClick={incrementNum}>+</button> */
+
 
 export default Content
